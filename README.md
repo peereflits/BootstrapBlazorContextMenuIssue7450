@@ -42,7 +42,7 @@ Interactive WebAssembly (Client-side rendering (CSR) using Blazor WebAssembly)
 1. Open this project Visual Studio (2026)
 1. Set the configuration to "Debug"
 1. Run the app on your local connected device
-![Run](./img/run.png)
+![Run](./img/Run.png)
 1. Confirm that the context menu behaves normal
 1. Switch the configuration to "Release"
 1. Run the app on your local connected device
