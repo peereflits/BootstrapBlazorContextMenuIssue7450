@@ -39,7 +39,7 @@ Interactive WebAssembly (Client-side rendering (CSR) using Blazor WebAssembly)
 ### Steps To Reproduce
 
 1. Connect an Android device to your Dev machine
-1. Open this project Visual Studio (2026)
+1. Open this project in Visual Studio (2026)
 1. Set the configuration to "Debug"
 1. Run the app on your local connected device
 ![Run](./img/Run.png)
