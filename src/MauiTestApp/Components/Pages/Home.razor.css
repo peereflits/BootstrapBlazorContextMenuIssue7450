@@ -1,0 +1,82 @@
+﻿.container-lg {
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+:lang(zh) {
+    font-family: sans-serif;
+    text-align: justify;
+    text-justify: auto;
+}
+
+p {
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6em;
+    text-align: left;
+}
+
+h1, h2, .title, .paper {
+    text-align: center;
+    font-weight: bold;
+    font-variant-numeric: lining-nums;
+}
+
+h1:lang(zh), h2:lang(zh), .title:lang(zh), .paper:lang(zh) {
+    font-family: serif;
+    font-weight: normal;
+    text-align: center;
+}
+
+.paper {
+    font-size: 1.5em;
+    padding: 0.5em 0;
+}
+
+h1 {
+    font-size: 2em;
+    padding: 0.5em 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    padding: 1em 0;
+}
+
+small {
+    display: inline-block;
+    font-size: 0.7em;
+    color: #777;
+    width: 5em;
+    font-variant-numeric: lining-nums;
+    white-space: nowrap;
+}
+
+em {
+    font-style: italic;
+    font-variant-numeric: lining-nums;
+}
+
+sup a, span.note a {
+    text-decoration: none;
+}
+
+sup a:hover, span.note a:hover {
+    text-decoration: underline;
+}
+
+.ubtn {
+    padding-bottom: 0;
+}
+
+.ubts {
+    padding-bottom: 1em;
+}
+
+.ubtl {
+    padding-bottom: 2em;
+}
+
+.ubte {
+    padding-bottom: 3em;
+}

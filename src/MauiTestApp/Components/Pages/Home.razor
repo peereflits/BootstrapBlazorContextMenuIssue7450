@@ -1,0 +1,45 @@
+﻿@page "/"
+
+<div class="container-lg">
+    <div id="U0_0_0" class="row">
+        <div class="col-sm-6" lang="en" style="background-color: #ffffff;">
+            <p class="paper">=== @Configuration ===</p>
+            <h1>Foreword</h1>
+        </div>
+        <div class="col-sm-6" lang="zh" style="background-color: #fdf9e2;">
+            <p class="paper">=== @Configuration ===</p>
+            <h1>前言</h1>
+        </div>
+    </div>
+    <ContextMenuZone>
+        @foreach(TextData item in data)
+        {
+            <ContextMenuTrigger ContextItem="item">
+                <div id="@item.Id" class="row">
+                    <div class="col-sm-6" lang="@item.LangCode1" style="background-color: #ffffff;">
+                        <p class="@item.CssClass">
+                            <small>@item.Key</small> @((MarkupString)item.Content1)
+                        </p>
+                    </div>
+                    <div class="col-sm-6" lang="@item.LangCode2" style="background-color: #fdf9e2;">
+                        <p class="@item.CssClass">
+                            <small>@item.Key</small> @((MarkupString)item.Content2)
+                        </p>
+                    </div>
+                </div>
+            </ContextMenuTrigger>
+        }
+        <ContextMenu>
+            <ContextMenuItem Icon="fa-solid fa-bookmark" Text="Add Bookmark" OnClick="OnAddBookmarkAsync"></ContextMenuItem>
+        </ContextMenu>
+    </ContextMenuZone>
+
+    <div class="row">
+        <div class="col-sm-6" lang="en" style="background-color: #ffffff;">
+            <p class="paper">=== @Configuration ===</p>
+        </div>
+        <div class="col-sm-6" lang="zh" style="background-color: #fdf9e2;">
+            <p class="paper">=== @Configuration ===</p>
+        </div>
+    </div>
+</div>
